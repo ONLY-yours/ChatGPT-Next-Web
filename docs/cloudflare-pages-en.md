@@ -32,7 +32,7 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 
 
 
-    - `OPENAI_SB=1 Optional，use the third-party OpenAI-SB API`
+    
 
 
 
