@@ -31,7 +31,7 @@ Fork this project on GitHub, then log in to dash.cloudflare.com and go to Pages.
 
 
 
-    - `DISABLE_FAST_LINK=1 Optional, disable parse settings from url`
+
     - `OPENAI_SB=1 Optional，use the third-party OpenAI-SB API`
 
 
