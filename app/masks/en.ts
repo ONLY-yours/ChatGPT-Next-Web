@@ -112,8 +112,8 @@ export const EN_MASKS: BuiltinMask[] = [
       },
       {
         id: "expert-1",
-        role: "assistant",
-        content: "How may I help you today, User?",
+        role: "system",
+        content: '',
         date: "",
       },
     ],
