@@ -1,4 +1,4 @@
-# 同步聊天记录
+# 同步聊天记录功能实现
 ## 准备工作
 - GitHub账号
 - 拥有自己搭建过的ChatGPT-Next-Web的服务器
@@ -24,7 +24,7 @@
 
     如果没什么问题，那就成功了
 
-    ![同步可用性完成的样子](./images/upstash-6.png)
+    ![同步成功](./images/upstash-6.png)
 
 5. Success! 
 
