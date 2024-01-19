@@ -15,6 +15,15 @@ export function useCommand(commands: Commands = {}) {
   const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const syncParam = urlSearchParams.get("sync");
+    if(syncParam) {
+      if(syncParam === "upstash") {
+        commands.fill!("upstash-value");
+      } else if(syncParam === "clear") {
+        commands.clear!();
+      }
+    } {
     let shouldUpdate = false;
     searchParams.forEach((param, name) => {
       const commandName = name as keyof Commands;
