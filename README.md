@@ -127,15 +127,28 @@ We recommend that you follow the steps below to re-deploy:
 
 > If you encounter a failure of Upstream Sync execution, please manually sync fork once.
 
-After forking the project, due to the limitations imposed by GitHub, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Once enabled, automatic updates will be scheduled every hour:
+After forking the project, due to the limitations imposed by GitHub, you need to manually enable Workflows and Upstream Sync Action on the Actions page of the forked project. Here are the steps to perform this:
+
+- Go to the Actions page of the forked project.
+- Click on the 'Workflows' tab and enable the required workflows.
+- Click on the 'Upstream Sync' tab and enable the Upstream Sync Action.
+- Once enabled, automatic updates will be scheduled every hour.
 
 ![Automatic Updates](./docs/images/enable-actions.jpg)
 
+### Enable Automatic Updates
+To enable automatic updates, follow the steps below:
+
 ![Enable Automatic Updates](./docs/images/enable-actions-sync.jpg)
+
+1. Go to the Actions page of the forked project.
+2. Click on the **Workflows** tab and enable the required workflows.
+3. Click on the **Upstream Sync** tab and enable the Upstream Sync Action.
+4. Once enabled, automatic updates will be scheduled every hour.
 
 ### Manually Updating Code
 
-If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to synchronize a forked project with upstream code.
+If you want to update instantly, you can check out the [GitHub documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to learn how to [synchronize a forked project with upstream code](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork).
 
 You can star or watch this project or follow author to get release notifications in time.
 
