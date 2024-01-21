@@ -132,11 +132,19 @@ After forking the project, due to the limitations imposed by GitHub, you need to
 - Go to the Actions page of the forked project.
 - Click on the 'Workflows' tab and enable the required workflows.
 - Click on the 'Upstream Sync' tab and enable the Upstream Sync Action.
-- Once enabled, automatic updates will be scheduled every hour.. Once enabled, automatic updates will be scheduled every hour:
+- Once enabled, automatic updates will be scheduled every hour.
 
 ![Automatic Updates](./docs/images/enable-actions.jpg)
 
+### Enable Automatic Updates
+To enable automatic updates, follow the steps below:
+
 ![Enable Automatic Updates](./docs/images/enable-actions-sync.jpg)
+
+1. Go to the Actions page of the forked project.
+2. Click on the **Workflows** tab and enable the required workflows.
+3. Click on the **Upstream Sync** tab and enable the Upstream Sync Action.
+4. Once enabled, automatic updates will be scheduled every hour.
 
 ### Manually Updating Code
 
