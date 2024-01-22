@@ -48,6 +48,11 @@ chunked_transfer_encoding on;  # チャンク転送エンコーディングを�
 tcp_nopush on;  # TCP NOPUSH オプションをオンにし、Nagleアルゴリズムを無効にする
 tcp_nodelay on;  # TCP NODELAY オプションをオンにし、遅延ACKアルゴリズムを無効にする
 keepalive_timeout 300;  # keep-alive のタイムアウトを 65 秒に設定する
+proxy_buffering off;  # プロキシバッファリングをオフにする
+chunked_transfer_encoding on;  # チャンク転送エンコーディングをオンにする
+tcp_nopush on;  # TCP NOPUSH オプションをオンにし、Nagleアルゴリズムを無効にする
+tcp_nodelay on;  # TCP NODELAY オプションをオンにし、遅延ACKアルゴリズムを無効にする
+keepalive_timeout 300;  # keep-alive のタイムアウトを 65 秒に設定する
 ```
 
 netlify でデプロイしている場合、この問題はまだ解決待ちです。
@@ -62,7 +67,13 @@ netlify でデプロイしている場合、この問題はまだ解決待ちで
 - サーバーへのルートは問題ありませんか？
 - ドメイン名は正しく解決されていますか？
 
-## "Error: Loading CSS chunk xxx failed..." と表示されることがあります。
+## キャッシュなし、ストリーミング出力をサポート
+proxy_cache off;  # キャッシュをオフにする
+proxy_buffering off;  # プロキシバッファリングをオフにする
+chunked_transfer_encoding on;  # チャンク転送エンコーディングをオンにする
+tcp_nopush on;  # TCP NOPUSH オプションをオンにし、Nagleアルゴリズムを無効にする
+tcp_nodelay on;  # TCP NODELAY オプションをオンにし、遅延ACKアルゴリズムを無効にする
+keepalive_timeout 300;  # keep-alive のタイムアウトを 65 秒に設定する
 
 Next.js では、最初のホワイトスクリーンの時間を短縮するために、デフォルトでチャンキングを有効にしています。技術的な詳細はこちらをご覧ください:
 
