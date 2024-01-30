@@ -25,7 +25,7 @@ export const EN_MASKS: BuiltinMask[] = [
     },
     lang: "en",
     builtin: true,
-    createdAt: 1688899480410,
+    createdAt: Date.now(),
   },
   {
     avatar: "1f916",
